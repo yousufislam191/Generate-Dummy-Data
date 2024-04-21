@@ -1,5 +1,4 @@
-# This is the original JSON object
-original_json = {
+{
     "user_id": "661e5a845d265411cef8526f",
     "hire_type": "FREELANEER",
     "hire_freelaneer": {
