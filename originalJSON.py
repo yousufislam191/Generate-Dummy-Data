@@ -1,5 +1,3 @@
-import json
-
 # This is the original JSON object
 original_json = {
     "user_id": "661e5a845d265411cef8526f",
@@ -61,24 +59,3 @@ original_json = {
     },
     "job_status": "OPEN"
 }
-
-# Create a list to hold the new JSON objects
-new_json_objects = []
-
-# Generate 100 new JSON objects
-for i in range(1, 201):
-    # Copy the original JSON object
-    new_json = json.loads(json.dumps(original_json))
-    
-    # Change the project_title and project_description
-    new_json["hire_freelaneer"]["details"]["project_title"] = f"New Title {i}"
-    new_json["hire_freelaneer"]["details"]["project_description"] = f"New Description {i}"
-    
-    # Add the new JSON object to the list
-    new_json_objects.append(new_json)
-
-# Convert the list of JSON objects to a JSON string
-json_string = json.dumps(new_json_objects, indent=4)
-
-# Print the JSON string
-print(json_string)
