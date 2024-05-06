@@ -1,2 +1,2 @@
 # amountofdata.py
-num_objects = 200
+num_objects = 5000000
