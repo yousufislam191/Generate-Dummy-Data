@@ -1,5 +1,5 @@
 import json
-from generateJson import generate_new_json_objects
+from generateJSON import generate_new_json_objects
 from amountOfData import num_objects
 
 def write_json_to_file(json_object, filename):
