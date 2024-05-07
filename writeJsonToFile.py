@@ -44,8 +44,8 @@ for i in range(0, num_objects, batch_size):
     write_json_to_file(batch_json_objects, 'generatedDummyData.json')
     
     # Calculate completion percentage
-    completion_percentage = min((i + batch_size) / num_objects * 100, 100)
-    print(f"Completion: {completion_percentage:.2f}%")
+    generation_completion_percentage = min((i + batch_size) / num_objects * 100, 100)
+    print(f"\rGeneration Completion: {generation_completion_percentage:.2f}%", end='', flush=True)
 
 end_time = time.time()
 
